@@ -28,6 +28,8 @@ main
 
     display: flex;
     flex-direction: column;
+
+    align-items: stretch;
 }
 
 /*header*/
@@ -76,6 +78,8 @@ nav > ul > li> a
     color: #403F3C;
     font-weight: bold;
 
+    font-size: 20px;
+
     height: 100%;
 
     padding: 10px
@@ -84,6 +88,13 @@ nav > ul > li> a
 nav > ul > li> a:hover
 {
     background-color: #E6E2D8;
+}
+
+.disabledMenuItem
+{
+    color: #8C8A84; 
+    margin-left: 5px;
+    font-size: 20px;
 }
 
 /*section*/
@@ -95,23 +106,29 @@ section
     text-align: center;
 
     color: #403F3C;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
 }
 
 section > article
 {
-    padding: 0px 420px 0px;
+    padding: 0px 200px 0px;
     font-size: 22px;
+    line-height: 35px;
 }
 
 section > article > ul > li
 {
-    padding-bottom: 15px;
-    font-size: 19px;
+    padding-bottom: 10px;
+    font-size: 22px;
 }
 
 section > h1
 {
-    font-size: 44px;
+    font-size: 41px;
 }
 
 /*footer*/
@@ -129,4 +146,58 @@ footer
     flex-direction: row;
     justify-content: center;
     align-items: center;
+}
+
+/*Form*/
+.errorMsg 
+{
+    color: red;
+    margin-bottom: 20px;
+}
+
+.submitButton
+{
+    color: black;
+    background-color: #B3AB96;
+
+    width: 180px;
+    height: 50px;
+    
+    font-size: 17px;
+    font-weight: bold;
+
+    border: 3px solid #807352;
+    border-radius: 10px;
+
+    margin-bottom: 20px;
+}
+
+.submitButton:hover
+{
+    background-color: #999281;
+}
+
+#formTable
+{
+    margin-bottom: 30px;
+    border-collapse:separate; 
+    border-spacing:15px;
+}
+
+
+.polishWord
+{
+    font-weight: bold;
+}
+
+.summaryInfo
+{
+    margin-bottom: 10px;
+
+    font-size: 16px;
+}
+
+.changelogRef
+{
+    color: white;
 }
